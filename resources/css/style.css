@@ -99,7 +99,7 @@ nav a:active {
 }
 .learn_box {
   display: block;
-  color: black;
+  color: #a9a9;
   margin-top: 3rem;
   line-height: 1.3;
   width: 22rem;
@@ -109,11 +109,13 @@ nav a:active {
   font-weight: bold;
   font-size: 2.5rem;
   margin-bottom: 2rem;
+  color: #a9a9;
 }
 .learn_box p {
   width: 90%;
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #a9a9;
 }
 .start_button {
   display: flex;
@@ -152,12 +154,12 @@ nav a:active {
 
 .practice.container {
   background-color: #efef;
-  border: solid #efefef;
   padding: 32px 0px;
 }
 .practice_content {
   display: flex;
   color: #1010;
+  border: solid #efef;
 }
 .left_box {
   padding: 32px 24px;
@@ -173,6 +175,7 @@ nav a:active {
   font-weight: bold;
   font-size: 2rem;
   margin-bottom: 24px;
+  color: #ff3b3f;
 }
 .left_box p {
   font-weight: 100;
@@ -186,6 +189,8 @@ nav a:active {
   width: 423px;
   display: flex;
   flex-direction: column;
+}
+.right_box.orientation {
   padding-top: 15px;
 }
 .info_box {
@@ -261,9 +266,10 @@ nav a:active {
   top: 4rem;
   background-color: #caebf2;
   padding-bottom: 1.5rem;
+  margin-bottom: 3rem;
 }
 .learning_container h1 {
-  color: rgb(16,16,16);
+  color: #a9a9;
   font-size: 2rem;
   font-weight: 500;
   padding: 2rem 0 1.5rem 0;
@@ -272,12 +278,11 @@ nav a:active {
   margin: 0;
 }
 .learning_box {
-  color: rgb(64,64,64);
+  color: #a9a9;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 1.5rem;
   line-height: 1.15;
 }
 .subjects {
@@ -291,7 +296,7 @@ nav a:active {
   width: 280px;
   display: flex;
   flex-direction: column;
-  margin: 0.5rem 1rem;
+  margin: 1rem 1rem;
   background-color: white;
 }
 .subject_pic {
@@ -315,7 +320,7 @@ nav a:active {
 .subject_text span {
   display: inline-block;
   margin: 0 0 0.5rem 1rem;
-  color: rgb(52,89,97);
+  color: #a9a9;
   font-size: 0.85rem;
 }
 .subject_text span, p {
@@ -327,23 +332,23 @@ nav a:active {
 
 /* thesis  */
 
-.learning_container {
+.thesis_container {
   background-color: #efef;
   padding-bottom: 0;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
 }
-.learning_container h1 {
-  color: rgb(16,16,16);
+.thesis_container h1 {
+  color: #a9a9;
   font-size: 2rem;
   font-weight: 500;
-  padding: 2rem 0 1rem 0;
+  padding-top: 2rem;
   width: 100%;
   text-align: center;
 }
-.practice_content {
-  padding-top: 0rem;
-}
-.left_box {
-  margin-right: 1rem;
+.thesis_content {
+  display: flex;
+  color: #1010;
 }
 .video {
   margin-bottom: 1.5rem;
@@ -357,18 +362,18 @@ nav a:active {
 .left_box p {
   margin-bottom: 0;
 }
-#fisma.right_box {
+.right_box {
   margin-left: 0;
   margin-top: 0;
+  padding: 32px 0;
 }
-.info_box.dark {
-  background-color: rgb(240,240,240);
+#fisma {
+  background-color: #caebf2;
 }
-#fisma.info_box {
-  width: 423px;
+.info_box {
   height: auto;
 }
-#dtext {
+.text_box h2 {
   margin: 0;
   line-height: 2;
 }
@@ -376,315 +381,23 @@ nav a:active {
 /* footer */
 
 footer {
- position: relative;
- z-index: 5;
- top: 4rem;
- background-color: white;
- height: 3rem;
- max-width: 100%;
- padding: 1.5rem;
- display: flex;
- align-items: center;
- font-weight: 300;
- font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+  top: 4rem;
+  background-color: white;
+  height: 3rem;
+  max-width: 100%;
+  padding: 1.5rem;
+  font-weight: 300;
+  font-size: 0.9rem;
 }
-
 footer span {
- flex-grow: 1;
+  flex-grow: 1;
 }
-
 footer nav a {
- padding: 0 0.5rem;
- text-decoration: none;
- color: rgb(64, 64, 64);
+  padding: 0 0.5rem;
+  text-decoration: none;
+  color: #efef;
 }
-
- /* media queries */
-
-@media only screen and (max-width: 1079px) {
- body {
-   width: 100%;
- }
- /* header section */
- header {
-   width: 100%;
- }
- .desktop {
-   display: none;
- }
- .mobile {
-   width: 100%;
-   display: flex;
-   justify-content: space-around;
-   align-content: center;
- }
- .logo {
-   display: none;
- }
- .mobile img {
-   height: 32px;
- }
- .mobile a:active {
-   background-color: #ff3b3f;
-   border-radius: 5px;
- }
- /* learn something */
- .learn_box {
-   margin-top: 0.5rem;
- }
- .learn_box h1 {
-   font-size: 2rem;
-   margin-bottom: 1rem;
- }
- .learn_box p {
-   font-size: 1rem;
-   margin-bottom: 1rem;
- }
-}
-
-@media only screen and (max-width: 600px) {
- body {
-   width: 100%;
-   margin: 0 auto;
- }
-
- /* header */
-
- header {
-   width: 100%;
- }
- .desktop {
-   display: none;
- }
- .mobile {
-   width: 100%;
-   display: flex;
-   justify-content: space-around;
-   align-content: center;
- }
- .logo {
-   display: none;
- }
- .mobile img {
-   height: 32px;
- }
- .mobile a:active {
-   background-color: #ff3b3f;
-   border-radius: 5px;
- }
-
- /* learn something new */
-
- .learn_content {
-   display: flex;
-   flex-direction: column;
-   margin: 0;
-   padding: 0;
-   width: 100%;
- }
- .mobile_box {
-   display: flex;
-   background-image: url("../images/banner.jpg");
-   background-position: top;
-   background-repeat: no-repeat;
-   background-size: cover;
-   padding: 1rem;
-   margin: 0.5rem;
-   max-width: 100%;
-   height: 9.25rem;
- }
- .image {
-   display: none;
- }
- .image_box {
-   display: none;
- }
- .learn_box {
-   color: black;
-   line-height: 1.4;
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-   margin: 0;
- }
- .learn_box h1 {
-   font-weight: bold;
-   font-size: 2rem;
-   margin: 2rem 1rem;
-   width: auto;
- }
- .learn_box p {
-   font-size: 1.2rem;
-   margin: 0 1rem 1.5rem 1rem;
-   width: auto;
- }
- .start_button {
-   display: flex;
-   justify-content: space-around;
- }
- .learn_box span {
-   background-color: #160167;
-   padding: 8px 0px;
-   margin: 0 1rem 2rem 1rem;
-   width: 100%;
- }
- .learn_box span:active {
-   background-color: #F90006;
-}
- .learn_box span a {
-   color: white;
-   font-weight: 400;
-   font-size: 1rem;
- }
- .subject_pic img {
-   display: none;
- }
- .subject_text span, p {
-   display: none;
- }
- .learning_container {
-   padding-bottom: 1rem;
- }
- .learning_container h1 {
-   padding: 2rem 0 1rem 0;
- }
- .subject_text h2 {
-   align-items: center;
-   color: rgb(30,111,127);
- }
- .subject_box {
-   height: 3.2rem;
-   width: 90%;
-   margin: 0.5rem;
-   padding: 0;
-   background-color: lightgray;
- }
-
- /* practice */
-
- .practice.container  {
-   padding: 0rem;
-   margin: 0rem;
- }
- .practice_content {
-   margin: 1rem;
-   padding: 0rem;
- }
- .left_box {
-   display: none;
- }
- .right_box {
-   width: 100%;
-   margin: 0;
-   padding: 0;
- }
- .info_box {
-   width: 100%;
-   padding: 0;
-   margin: 0;
- }
- .mobile_pic {
-   display: block;
-   padding: 0rem;
-   width: 100%;
- }
- .mobile_pic img {
-   max-width: 100%;
-   height: auto;
- }
- .desktop_pic {
-   display: none;
- }
- .text_box {
-   margin: 1rem 0 1rem 1rem;
-   padding: 0rem;
-   text-align: center;
- }
- #special {
-   display: block;
-   font-size: 1.3rem;
-   font-weight: 500;
-   margin-bottom: 8px;
- }
- .text_box h2 {
-   margin: 0;
-   margin-bottom: 0.5rem;
-   padding: 0;
- }
- .text_box span {
-   font-weight: 300;
-   font-size: 1rem;
-   margin-bottom: 0.5rem;
- }
- .text_box a {
-   font-size: 0.9rem;
-   margin-bottom: 0rem;
- }
- #desk_guest {
- display: none;
- }
- #oliver {
-   background-color: rgb(213,248,255);
- }
-
- /* thesis */
-
- #fisma.right_box {
-   display: none;
- }
-
- #thesis.left_box {
-   display: block;
-   padding: 0;
-   margin: 0;
- }
-
- #thesis.left_box h1, p {
-   display: none;
- }
-
- #thesis.learning_container {
-   background-color: rgb(109,187,204);
-   width: 100%;
-   padding: 0;
-   margin: 0 auto;
- }
-
- #thesis.practice_content {
-   max-width: 100%;
-   padding: 0;
-   margin: 0 auto;
- }
-
- .video {
-   max-width: 100%;
-   height: auto;
-   padding-bottom: 1.5rem;
-   margin: 0;
- }
-
- .video video {
-   max-width: 100%;
-   height: auto;
-   padding: 0;
-   margin: 0 auto;
- }
-
- #title {
-   padding: 2rem 0;
-   margin: 0;
-   font-weight: 600;
- }
-}
-
- /* copyright */
-
- footer {
-   padding: 1rem;
-   height: auto;
-   font-size: 0.75rem;
- }
- footer nav a {
-   display: none;
- }
- }
