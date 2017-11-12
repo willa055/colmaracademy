@@ -413,6 +413,7 @@ footer nav a {
   text-decoration: none;
   color: #white;
 }
+
 /* media queries */
 
 @media only screen and (max-width: 1079px) {
@@ -420,6 +421,7 @@ footer nav a {
     width: 100%;
   }
   /* header section */
+
   header {
     width: 100%;
   }
@@ -442,7 +444,9 @@ footer nav a {
     background-color: #ff3b3f;
     border-radius: 5px;
   }
+
   /* learn something */
+
   .learn_box {
     margin-top: 0.5rem;
   }
@@ -582,15 +586,6 @@ footer nav a {
     text-align: center;
     width: 100%;
   }
-  #special {
-    display: block;
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin-bottom: 8px;
-  }
-  #guest {
-    display: none;
-  }
   .text_box h2 {
     margin: 0;
     margin-bottom: 0.5rem;
@@ -607,6 +602,15 @@ footer nav a {
   }
   #oliver {
     background-color: #caebf2;
+  }
+  #special {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  #guest {
+    display: none;
   }
 
   /* start learning */
