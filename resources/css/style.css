@@ -78,6 +78,11 @@ nav a:active {
 .mobile {
   display: none;
 }
+.logo a:hover {
+  color: white;
+  background-color: #160167;
+  border-radius: 5px;
+}
 
 /* learn something */
 
@@ -166,10 +171,10 @@ nav a:active {
 .left_box {
   padding: 32px 24px;
 }
-.emanuel {
+.info_main {
   margin-bottom: 2rem;
 }
-.emanuel img {
+.info_main img {
   max-width: 100%;
   height: auto;
 }
@@ -184,13 +189,11 @@ nav a:active {
   margin-bottom: 1.5rem;
   line-height: 1.5;
 }
-.left_box span {
+.author {
   font-weight: 300;
   font-size: 0.75rem;
   margin: 32px 0;
-}
-#emanuel {
-  margin: 32px 0;
+  color: #160167;
 }
 .right_box {
   width: 423px;
@@ -205,8 +208,18 @@ nav a:active {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-content: center;
+  align-content: flex-start;
   width: 423px;
+}
+.info_box:hover {
+  background-color: #36454f;
+  color: white;
+}
+.info_box.text_box {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
 .desktop_pic {
   width: 35%;
@@ -219,15 +232,16 @@ nav a:active {
 #oliver {
   background-color: #caebf2;
 }
+#oliver:hover {
+  background-color: #36454f;
+  color: white;
+}
 .text_box {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  width: 40%;
   margin: 2.5rem 1.5rem 3rem 2rem;
-  color: #1010;
-}
-#special {
-  display: none;
 }
 .text_box h2 {
   font-size: 1.2rem;
@@ -235,13 +249,14 @@ nav a:active {
   margin-bottom: 0.5rem;
   letter-spacing: .4px;
 }
-.text_box span {
+.text_box p {
   font-weight: 300;
   font-size: 0.8rem;
   margin-bottom: 1.2rem;
 }
 .text_box a {
-  color: blue;
+  color: white;
+  background-color: #160167;
   font-weight: 400;
   font-size: 1rem;
   text-decoration: none;
@@ -251,7 +266,7 @@ nav a:active {
 }
 .text_box a:hover {
   color: white;
-  background-color: #160167;
+  background-color: #ff3b3f;
   border-radius: 5px;
   padding: 0.5rem;
   text-align: center;
@@ -262,6 +277,9 @@ nav a:active {
   transition-duration: 2s;
 }
 .mobile_pic {
+  display: none;
+}
+#special {
   display: none;
 }
 
@@ -325,22 +343,24 @@ nav a:active {
   padding: 0;
   color: #ff3b3f;
 }
-.subject_text span {
+.subject_text h5 {
   display: inline-block;
   margin: 0 0 0.5rem 1rem;
-  color: #36454f;
   font-size: 0.85rem;
 }
-.subject_text span, p {
+.subject_text h5, p {
   font-weight: 300;
 }
 .subject_text p {
   margin: 0 0 1.5rem 1rem;
 }
-#computer h1,span,p {
+#computer h1,h5,p {
   line-height: 1;
 }
-
+.subject_box:hover {
+  background-color: #36454f;
+  color: white;
+}
 /* thesis  */
 
 .thesis_container {
@@ -378,9 +398,6 @@ nav a:active {
   margin-top: 0;
   padding: 32px 0;
 }
-#fisma {
-  background-color: #caebf2;
-}
 .thesis .info_box {
   height: auto;
   padding: 16px 0 0 16px;
@@ -389,7 +406,13 @@ nav a:active {
   margin: 0;
   line-height: 2;
 }
-
+#fisma {
+  background-color: #caebf2;
+}
+#fisma:hover {
+  background-color: #36454f;
+  color: white;
+}
 /* footer */
 
 footer {
@@ -405,13 +428,13 @@ footer {
   font-weight: 300;
   font-size: 0.9rem;
 }
-footer span {
+footer p {
   flex-grow: 1;
 }
 footer nav a {
   padding: 0.5rem 0.5rem;
   text-decoration: none;
-  color: #white;
+  color: #36454f;
 }
 
 /* media queries */
@@ -658,7 +681,7 @@ footer nav a {
     padding: 0;
     margin: 0;
   }
-  .left_box h1, p {
+  .left_box h1 {
     display: none;
   }
   .thesis_container {
@@ -697,5 +720,9 @@ footer nav a {
   }
   footer nav a {
     display: none;
+  }
+  footer p {
+    display: flex;
+    justify-content: center;
   }
 }
