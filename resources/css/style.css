@@ -65,13 +65,11 @@ header span {
 nav a:hover {
   color: white;
   background-color: #160167;
-  border-radius: 3px;
   transition: background-color 1s linear;
 }
 nav a:active {
   color: blue;
   background-color: #160167;
-  border-radius: 3px;
 }
 .mobile {
   display: none;
@@ -213,8 +211,8 @@ nav a:active {
   width: 423px;
 }
 .info_box:hover {
-  background-color: #36454f;
-  color: white;
+  background-color: #B9C9D0;
+  color: #333333;
 }
 .info_box.text_box {
   display: flex;
@@ -234,8 +232,8 @@ nav a:active {
   background-color: #caebf2;
 }
 #oliver:hover {
-  background-color: #36454f;
-  color: white;
+  background-color: #B9C9D0;
+  color: #333333;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -347,7 +345,7 @@ nav a:active {
   font-weight: 500;
   margin: 0.9rem 0rem 0.5rem 1rem;
   padding: 0;
-  color: #ff3b3f;
+  color: #160167;
 }
 .subject_text h5 {
   display: inline-block;
@@ -364,10 +362,12 @@ nav a:active {
   line-height: 1;
 }
 .subject_box:hover {
-  background-color: #36454f;
-  color: white;
+  background-color: #B9C9D0;
+  color: #333333;
   transition: background-color 0.5s linear;
 }
+
+
 /* thesis  */
 
 .thesis_container {
@@ -418,8 +418,8 @@ nav a:active {
   background-color: #caebf2;
 }
 #fisma:hover {
-  background-color: #36454f;
-  color: white;
+  background-color: #B9C9D0;
+  color: #333333;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
