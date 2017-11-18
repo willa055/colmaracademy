@@ -159,13 +159,13 @@ nav a:active {
 /* keep practicing */
 
 .practice.container {
-  background-color: #white;
+  background-color: white;
   padding: 32px 0px;
 }
 .practice_content {
   display: flex;
   color: #1010;
-  border: solid #white;
+  border: solid white;
 }
 .left_box {
   padding: 32px 24px;
@@ -371,7 +371,7 @@ nav a:active {
 /* thesis  */
 
 .thesis_container {
-  background-color: #white;
+  background-color: white;
   padding-bottom: 0;
   padding-top: 1.5rem;
   margin-top: 1.5rem;
@@ -671,7 +671,7 @@ footer nav a {
   }
   .subject_text h2 {
     align-items: center;
-    color: white;
+    color: #36454f;
     padding-top: 0.5rem;
   }
   .subject_text h5 {
