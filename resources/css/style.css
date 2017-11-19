@@ -164,7 +164,7 @@ nav a:active {
 }
 .practice_content {
   display: flex;
-  color: #1010;
+  color: #36454f;
   border: solid white;
 }
 .left_box {
@@ -580,7 +580,7 @@ footer nav a {
     background-color: #F90006;
   }
   .learn_box span a {
-    color: #36454f;
+    color: white;
     font-weight: 400;
     font-size: 1rem;
   }
@@ -671,7 +671,7 @@ footer nav a {
   }
   .subject_text h2 {
     align-items: center;
-    color: #36454f;
+    color: white;
     padding-top: 0.5rem;
   }
   .subject_text h5 {
